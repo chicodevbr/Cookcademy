@@ -15,6 +15,7 @@
 		2AC2434928FCAFEE00F2E279 /* RecipesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2434828FCAFEE00F2E279 /* RecipesListView.swift */; };
 		2AC2434B28FCAFF400F2E279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC2434A28FCAFF400F2E279 /* Assets.xcassets */; };
 		2AC2434E28FCAFF400F2E279 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC2434D28FCAFF400F2E279 /* Preview Assets.xcassets */; };
+		2ACEF4AF29009C09007FC1F2 /* RecipeCategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACEF4AE29009C09007FC1F2 /* RecipeCategoryGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		2AC2434828FCAFEE00F2E279 /* RecipesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListView.swift; sourceTree = "<group>"; };
 		2AC2434A28FCAFF400F2E279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AC2434D28FCAFF400F2E279 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2ACEF4AE29009C09007FC1F2 /* RecipeCategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCategoryGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			children = (
 				2AC2434828FCAFEE00F2E279 /* RecipesListView.swift */,
 				2A7C082F28FE2636007D2052 /* RecipeDetailView.swift */,
+				2ACEF4AE29009C09007FC1F2 /* RecipeCategoryGridView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			files = (
 				2A79A62B28FCB9E900D10938 /* Recipe.swift in Sources */,
 				2A7C083028FE2636007D2052 /* RecipeDetailView.swift in Sources */,
+				2ACEF4AF29009C09007FC1F2 /* RecipeCategoryGridView.swift in Sources */,
 				2A7C082E28FDFD12007D2052 /* RecipeData.swift in Sources */,
 				2AC2434928FCAFEE00F2E279 /* RecipesListView.swift in Sources */,
 				2AC2434728FCAFEE00F2E279 /* CookcademyApp.swift in Sources */,
