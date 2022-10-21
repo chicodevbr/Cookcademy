@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct RecipesListView: View {
-    @StateObject var recipeData = RecipeData()
+    @EnvironmentObject private var recipeData: RecipeData
+    let category: MainInformation.Category
     
         
     var body: some View {
@@ -26,17 +27,20 @@ struct RecipesListView: View {
     }
 }
 extension RecipesListView {
-    var recipes: [Recipe] {
-        recipeData.recipes
+    private var recipes: [Recipe] {
+        recipeData.recipes(for: category)
     }
     
-    var navigationTitle: String {
-        "All Recipes"
+    private var navigationTitle: String {
+        "\(category.rawValue) Recipes"
     }
 }
 
 struct RecipesListView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipesListView()
+        NavigationView {
+            RecipesListView(category: .breakfast)
+                .environmentObject(RecipeData())
+        }
     }
 }
