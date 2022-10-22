@@ -24,8 +24,16 @@ struct Recipe:Identifiable {
         self.mainInformation = mainInformation
         self.ingredients = ingredients
         self.directions = directions
+        
+        
+    }
+    
+    var isValid: Bool {
+        mainInformation.isValid && !ingredients.isEmpty && !directions.isEmpty
     }
 }
+
+
 
 struct MainInformation {
     var name: String
@@ -38,6 +46,10 @@ struct MainInformation {
         case lunch = "Lunch"
         case dinner = "Dinner"
         case dessert = "Dessert"
+    }
+    
+    var isValid: Bool {
+        !name.isEmpty && !description.isEmpty && !author.isEmpty
     }
 }
 
